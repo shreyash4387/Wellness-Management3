@@ -1,0 +1,813 @@
+<!DOCTYPE html> 
+<html lang="en">
+	
+<!-- doccure/doctor-dashboard.html  30 Nov 2019 04:12:03 GMT -->
+<head>
+		<meta charset="utf-8">
+		<title>HMS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+		
+		<!-- Favicons -->
+		
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+		<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+		
+		<!-- Main CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	
+	</head>
+	<body>
+
+		<!-- Main Wrapper -->
+		<div class="main-wrapper">
+				<!-- Header -->
+				<header class="header">
+					<nav class="navbar navbar-expand-lg header-nav">
+						<div class="navbar-header">
+							<a id="mobile_btn" href="javascript:void(0);">
+								<span class="bar-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+								</span>
+							</a>
+							<a href="index.html" class="navbar-brand logo" style="font-size:28px">
+								HMS System 
+							</a>
+						</div>
+						<div class="main-menu-wrapper">
+							<div class="menu-header">
+								<a href="index.html" class="menu-logo">
+									<img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+								</a>
+								<a id="menu_close" class="menu-close" href="javascript:void(0);">
+									<i class="fas fa-times"></i>
+								</a>
+							</div>
+							<ul class="main-nav">
+								<li class="active">
+									<a href="index.html">Home</a>
+								</li>
+								<li class="has-submenu">
+									<a href="#">Hospitals <i class="fas fa-chevron-down"></i></a>
+									<ul class="submenu">
+										<li><a href="register-hospital.html">Register Your Hospital</a></li>
+										<li><a href="admin/login.html">View your Institution</a></li>
+										<li><a href="doctor-login.html">Doctor Login</a></li>
+										<!--<li><a href="my-patients.html">Patients List</a></li>
+										<li><a href="patient-profile.html">Patients Profile</a></li>
+										<li><a href="chat-doctor.html">Chat</a></li>
+										<li><a href="invoices.html">Invoices</a></li>
+										<li><a href="doctor-profile-settings.html">Profile Settings</a></li>
+										<li><a href="reviews.html">Reviews</a></li>
+										<li><a href="doctor-register.html">Doctor Register</a></li>-->
+									</ul>
+								</li>	
+								<li class="has-submenu">
+									<a href="#">Medical Laboratories <i class="fas fa-chevron-down"></i></a>
+									<ul class="submenu">
+										<li><a href="register-lab.html">Register your Institution</a></li>
+										<li><a href="technician.html">Technician Login</a></li>
+										<!--<li><a href="checkout.html">Checkout</a></li>
+										<li><a href="booking-success.html">Booking Success</a></li>
+										<li><a href="patient-dashboard.html">Patient Dashboard</a></li>
+										<li><a href="favourites.html">Favourites</a></li>
+										<li><a href="chat.html">Chat</a></li>
+										<li><a href="profile-settings.html">Profile Settings</a></li>
+										<li><a href="change-password.html">Change Password</a></li>-->
+									</ul>
+								</li>	
+								<li class="has-submenu">
+									<a href="#">Pharmacies <i class="fas fa-chevron-down"></i></a>
+									<ul class="submenu">
+										<li><a href="register-pharmacy.html">Register your Institution</a></li>
+										<li><a href="chemist-login.html">Chemist Login</a></li>
+									<!--	<li><a href="search.html">Search Doctors</a></li>
+										<li><a href="calendar.html">Calendar</a></li>
+										<li><a href="components.html">Components</a></li>
+										<li class="has-submenu">
+											<a href="invoices.html">Invoices</a>
+											<ul class="submenu">
+												<li><a href="invoices.html">Invoices</a></li>
+												<li><a href="invoice-view.html">Invoice View</a></li>
+											</ul>
+										</li>
+										<li><a href="blank-page.html">Starter Page</a></li>
+										<li><a href="login.html">Login</a></li>
+										<li><a href="register.html">Register</a></li>
+										<li><a href="forgot-password.html">Forgot Password</a></li> -->
+									</ul>
+								</li>
+								
+								<li class="login-link">
+									<a href="login.html">Login / Signup</a>
+								</li>
+							</ul>		 
+						</div>		 
+						<ul class="nav header-navbar-rht">
+							<li class="nav-item contact-item">
+								<div class="header-contact-img">
+									<i class="far fa-hospital"></i>							
+								</div>
+								<div class="header-contact-detail">
+									<p class="contact-header">Get your Unique </p>
+									<p class="contact-info-header"> Health ID</p>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link header-login" href="login.html">login / Signup </a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<!-- /Header -->
+			
+			<!-- Breadcrumb -->
+			<div class="breadcrumb-bar">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-md-12 col-12">
+							<nav aria-label="breadcrumb" class="page-breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+								</ol>
+							</nav>
+							<h2 class="breadcrumb-title">Dashboard</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Breadcrumb -->
+			
+			<!-- Page Content -->
+			<div class="content">
+				<div class="container-fluid">
+
+					<div class="row">
+						<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+							
+							<!-- Profile Sidebar -->
+							<div class="profile-sidebar">
+								<div class="widget-profile pro-widget-content">
+									<div class="profile-info-widget">
+									
+										<div class="profile-det-info">
+											<h3>Ketan Patel</h3>
+											
+											<div class="patient-details">
+												<h5 class="mb-0">Age: 54</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="dashboard-widget">
+									<nav class="dashboard-menu">
+										<ul>
+											<li class="active" style="padding: 15px;">
+												
+													<i class="fas fa-columns"></i>
+													<span>Patient ID: 40404697</span>
+												
+											</li>
+											<li  style="padding: 15px;">
+												
+												<i class="fas fa-dot-circle"></i>
+													<span>Blood Group - B+</span>
+												
+											</li>
+											<li  style="padding: 15px;">
+												
+												<i class="fas fa-ruler-vertical"></i>
+												<span>Height - 178 cm </span>
+											
+										</li>
+										<li  style="padding: 15px;">
+												
+											<i class="fas fa-weight"></i>
+											<span>Weight - 75kgs</span>
+										
+									</li>
+									<li  style="padding: 15px;">
+												
+										<i class="fas fa-briefcase"></i>
+										<span>Occupation - BusinessMan</span>
+									
+								</li>
+								<li  style="padding: 15px;">
+												
+									<i class="fas fa-address-book"></i>
+									<span>Address - Ahmedabad</span>
+								
+							</li>
+							<li  style="padding: 15px;">
+												
+								<i class="fas fa-phone-volume"></i>
+								<span>Contact - 9778646320</span>
+							
+						</li>
+											
+											<li>
+												<a href="index.html">
+													<i class="fas fa-sign-out-alt"></i>
+													<span>Logout</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+							<!-- /Profile Sidebar -->
+							
+						</div>
+						
+						<div class="col-md-7 col-lg-8 col-xl-9">
+
+						<!--<div class="row">
+								<div class="col-md-12">
+									<div class="card dash-card">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-md-12 col-lg-4">
+													<a href="#" style="position: relative; float: right; padding-right: 15px;"><i class="fas fa-edit"></i></a>
+													<div class="dash-widget dct-border-rht">
+														
+														<div class="circle-bar circle-bar1">
+															<div class="circle-graph1" data-percent="">
+																<img src="assets/img/bmi.png" class="img-fluid" alt="patient">
+															</div>
+														</div>
+														<div class="dash-widget-info">
+															<h6>BMI</h6>
+															<h3>24</h3>
+															<p class="text-muted">Remarks: Normal</p>
+														</div>
+													</div>
+												</div>
+												
+												<div class="col-md-12 col-lg-4">
+													<a href="#" style="position: relative; float: right; padding-right: 15px;"><i class="fas fa-edit"></i></a>
+													
+													<div class="dash-widget dct-border-rht">
+														<div class="circle-bar circle-bar2">
+															<div class="circle-graph2" data-percent="">
+																<img src="assets/img/heart-rate.png" class="img-fluid" alt="Patient">
+															</div>
+														</div>
+														<div class="dash-widget-info">
+															<h6>Heart Rate</h6>
+															<h3>160 bpm</h3>
+															<p class="text-muted">Remars: Below Max. Average</p>
+														</div>
+													</div>
+												</div>
+												
+												<div class="col-md-12 col-lg-4">
+													<a href="#" style="position: relative; float: right; padding-right: 15px;"><i class="fas fa-edit"></i></a>
+													
+													<div class="dash-widget">
+														<div class="circle-bar circle-bar3">
+															<div class="circle-graph3" data-percent="">
+																<img src="assets/img/pressure.png" class="img-fluid" alt="Patient">
+															</div>
+														</div>
+														<div class="dash-widget-info">
+															<h6>Blood Pressure</h6>
+															<h3>140/90</h3>
+															<p class="text-muted">Remarks: High Blood Pressure</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+
+
+							
+							<div class="row">
+								<div class="col-md-12">
+									<div class="card dash-card">
+										<div class="card-body">
+											<div class="row">
+												<div class="col-md-12 col-lg-6">
+													<a href="#" style="position: relative; float: right; padding-right: 15px;"><i class="fas fa-edit"></i></a>
+													<div class="dash-widget dct-border-rht">
+														
+														<div class="circle-bar circle-bar1">
+															<div class="circle-graph1" data-percent="">
+																<img src="assets/img/oxygen.png" class="img-fluid" alt="patient">
+															</div>
+														</div>
+														<div class="dash-widget-info">
+															<h6>Oxygen Level</h6>
+															<h3>98</h3>
+															<p class="text-muted">Remarks: Normal</p>
+														</div>
+													</div>
+												</div>
+												
+												<div class="col-md-12 col-lg-6">
+													<a href="#" style="position: relative; float: right; padding-right: 15px;"><i class="fas fa-edit"></i></a>
+													
+													<div class="dash-widget dct-border-rht">
+														<div class="circle-bar circle-bar2">
+															<div class="circle-graph2" data-percent="">
+																<img src="assets/img/temp.jpg" class="img-fluid" alt="Patient">
+															</div>
+														</div>
+														<div class="dash-widget-info">
+															<h6>Body Temperature</h6>
+															<h3>37 degree celsuis</h3>
+															<p class="text-muted">Remarks: Normal</p>
+														</div>
+													</div>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                        -->
+							<div class="row">
+								
+								<div class="col-md-12">
+								
+                                	
+									<div class="appointment-tab">
+									
+										<ul class="nav nav-tabs nav-tabs-solid nav-tabs-rounded">
+										<!--	<li class="nav-item">
+												<a class="nav-link active" href="#active-cases" data-toggle="tab">Active Case</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="#allergies" data-toggle="tab">Allergies</a>
+											</li> 
+										
+											<li class="nav-item">
+												<a class="nav-link" href="#history" data-toggle="tab">History</a>
+											</li> -->
+											<li class="nav-item">
+												<a class="nav-link active" href="#lab" data-toggle="tab">Medical Tests</a>
+											</li>
+										</ul>
+										<!-- /Appointment Tab -->
+										
+										<div class="tab-content">
+										
+											<!-- Active Case Tab 
+											<div class="tab-pane show active" id="active-cases">
+												<div class="card card-table mb-0">
+													<div class="card-body" style="padding: 15px;">
+														<form>
+															<div class="form-row">
+															  <div class="col">
+																<input type="text" class="form-control" placeholder="" value="C102913" disabled>
+															  </div>
+															  <div class="col">
+																<input type="date" class="form-control" placeholder="" value="" >
+															  </div>
+															  </div>
+															  <br>
+															  <div class="form-row">
+																<div class="col">
+																	<label for="inputState">Major Symptoms</label>
+																	<input type="text" class="form-control" placeholder="Nausea" >
+															 
+																  </div>
+
+																  <div class="col">
+																	<label for="inputState">Specific Symptoms</label>
+																	<input type="text" class="form-control" placeholder="Heavy Breathing" >
+															 
+																  </div>
+															  </div>
+															  <br>
+															  <div class="form-row">
+																<div class="col">
+																	<label for="inputState">Medical test prescribed</label>
+																	<select id="inputState" class="form-control">
+																		<option selected>Blood Test</option>
+																		<option>Kidney Function Test</option>
+																		<option>Liver Function Test</option>
+																		<option>Protien Test</option>
+																	  </select>
+																  </div>
+
+																 
+															  </div>
+															  <br>
+
+															  <div class="form-row">
+																<div class="col">
+																	<label for="inputState">Disease Detected (or analysed)</label>
+																	<input type="text" class="form-control" placeholder="Seasonal Flu" >
+															 
+																  </div>
+
+																 
+															  </div>
+<hr>
+<h3>Prescription Columns</h3>
+															  <div class="form-row">
+																<div class="col">
+																	<label for="inputState">Therapies</label>
+																	<select id="inputState" class="form-control">
+																		<option selected>Therapy 1</option>
+																		<option>Therapy 2</option>
+																		<option>Therapy 3</option>
+																		<option>Therapy 4</option>
+																		<option selected>None</option>
+																	  </select>
+																  </div>
+
+																  <div class="col">
+																	<label for="inputState">Injections</label>
+																	<select id="inputState" class="form-control">
+																		<option selected>Injection 1</option>
+																		<option>Injection 2</option>
+																		<option>Injection 3</option>
+																		<option>Injection 4</option>
+																		<option selected>None</option>
+																	  </select>
+																  </div>
+
+																 
+															  </div>
+															  <br>
+															  <div class="form-row">
+																  <div class="col">
+																	<label for="inputState">Medicines</label>
+																	<br>
+																	<textarea row="12" col="700"></textarea>
+															 
+																  </div>
+
+																  <div class="col">
+																	<label for="inputState">Food Supplemets</label>
+																	<br>
+																	<textarea row="12" col="700"></textarea>
+															 
+																  </div>
+															  </div>
+															  <div style="display: flex; justify-content: space-around; margin: 15px;">
+																<button type="submit" class="btn btn-primary">Email Prescription</button>
+																<button type="submit" class="btn btn-primary">SMS Prescription</button>
+														
+															  </div>
+														  </form>
+															
+													</div>	
+												</div>	
+											</div>
+											<!-- /Today Appointment Tab
+
+											<div class="tab-pane show " id="allergies">
+												<div class="card card-table mb-0">
+													<div class="card-body">
+														<div class="table-responsive">
+															<table class="table table-hover table-center mb-0">
+																<thead>
+																	<tr>
+																		<th>Allergy Trigger</th>
+																		<th>Symptoms</th>
+																		<th>Detected Since</th>
+																		<th>Remedy prescribed</th>
+																		<th>Reports</th>
+																		
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		
+																		<td>Drug Allergy</td>
+																		<td>Red patched<br>Irritation</td>
+																		<td>Age: 60</td>
+																		<td >Antihistamines</td>
+																		<td><button class="btn btn-success">View Details</button></td>
+																		
+																	</tr>
+																	<tr>
+																		<td>Food Allergy</td>
+																		<td>Tingling in the mouth<br>Swelling of Lips</td>
+																		<td>Childhood</td>
+																		<td >Antihistamines</td>
+																		<td><button class="btn btn-success">View Details</button></td>
+																		
+																	</tr>
+																	
+																</tbody>
+															</table>		
+														</div>
+													</div>
+												</div>
+											</div>
+									<!--allergy end -->
+									
+									
+									<div class="tab-pane active" id="lab">
+										<div class="card card-table mb-0">
+											<div class="card-body">
+												<div class="table-responsive">
+													<table class="table table-hover table-center mb-0">
+														<thead>
+															<tr>
+																<th>Medical Test Name</th>
+																<th>Sample</th>
+                                                                <th>Verified By</th>
+																<th>Date</th>
+																<th>Action</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																
+																<td>Blood Test</td>
+																<td>Blood</td>
+                                                                <td>Dr. Geyln</td>
+																<td>10/04/2021</td>
+																
+																<td><button class="btn btn-success">Submitted</button></td>
+																
+															</tr>
+															<tr>
+																<td>Lipid Profile</td>
+															
+                                                                <td>Sample B</td>
+                                                                <td>Dr. Geyln</td>
+																<td>10/10/2020</td>
+																	
+                                                                <td><button class="btn btn-success">Submitted</button></td>
+																
+															</tr>
+
+															<tr>
+																<td>Urine Test</td>
+															
+                                                                <td>Urine</td>
+                                                                <td>Dr. Geyln</td>
+																<td>10/10/2020</td>
+                                                                <td><button class="btn btn-success">Submitted</button></td>
+																
+															</tr>
+
+															<tr>
+																<td>HbAc1</td>
+														
+                                                                <td>Blood</td>
+                                                                <td>Dr. Geyln</td>
+																<td>10/10/2020</td>
+																	
+																<td><button class="btn btn-info"><a href="lab-dashboard.html" style="color: white;">Add</a></button></td>
+																
+															</tr>
+															
+														</tbody>
+													</table>		
+												</div>
+											</div>
+										</div>
+									</div>
+							<!--lab end -->
+
+
+										<!--	<div class="tab-pane show" id="history">
+												<div class="card card-table mb-0">
+													<div class="card-body">
+														<div class="form-group">
+															<label for="filter">Filter</label>
+															<input type="date">
+														</div>
+														<div class="table-responsive">
+															<table class="table table-hover table-center mb-0">
+																<thead>
+																	<th>Date</th>
+																	<th>Organ Affected</th>
+																	<th>Medical Condition</th>
+																	<th>Medical Course</th>
+																	<th>Genetic Category</th>
+																	<th>Hormonal Category</th>
+																	<th>More</th>
+																	</thead>
+																	<tbody>	
+																		<tr>
+																			<td>10/04/2021</td>
+																			<td>Liver</td>
+																			<td>Jaundice</td>
+																			<td>Ongoing</td>
+																			<td>-</td>
+																			<td>-</td>
+																			<td><button class="btn btn-success">Case Details</button></td>
+
+																		</tr>
+																		<tr>
+																			<td>10/10/2020</td>
+																			<td>-</td>
+																			<td>Allergic Condition</td>
+																			<td>Completed</td>
+																			<td>-</td>
+																			<td>-</td>
+																			<td><button class="btn btn-success">Case Details</button></td>
+
+																		</tr>
+																		</tbody>
+															</table>		
+														</div>
+													</div>
+												</div>
+											</div>
+											history end-->
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					
+					</div>
+						</div>
+
+			</div>		
+			<!-- /Page Content -->
+   
+			<!-- Footer -->
+			<footer class="footer">
+				
+				<!-- Footer Top -->
+				<div class="footer-top">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-3 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-about">
+									<div class="footer-logo">
+										<img src="assets/img/footer-logo.png" alt="logo">
+									</div>
+									<div class="footer-about-content">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<div class="social-icon">
+											<ul>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-facebook-f"></i> </a>
+												</li>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-twitter"></i> </a>
+												</li>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+												</li>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+												</li>
+												<li>
+													<a href="#" target="_blank"><i class="fab fa-dribbble"></i> </a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+							<div class="col-lg-3 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Patients</h2>
+									<ul>
+										<li><a href="search.html"><i class="fas fa-angle-double-right"></i> Search for Doctors</a></li>
+										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Login</a></li>
+										<li><a href="register.html"><i class="fas fa-angle-double-right"></i> Register</a></li>
+										<li><a href="booking.html"><i class="fas fa-angle-double-right"></i> Booking</a></li>
+										<li><a href="patient-dashboard.html"><i class="fas fa-angle-double-right"></i> Patient Dashboard</a></li>
+									</ul>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+							<div class="col-lg-3 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-menu">
+									<h2 class="footer-title">For Doctors</h2>
+									<ul>
+										<li><a href="appointments.html"><i class="fas fa-angle-double-right"></i> Appointments</a></li>
+										<li><a href="chat.html"><i class="fas fa-angle-double-right"></i> Chat</a></li>
+										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Login</a></li>
+										<li><a href="doctor-register.html"><i class="fas fa-angle-double-right"></i> Register</a></li>
+										<li><a href="doctor-dashboard.html"><i class="fas fa-angle-double-right"></i> Doctor Dashboard</a></li>
+									</ul>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+							<div class="col-lg-3 col-md-6">
+							
+								<!-- Footer Widget -->
+								<div class="footer-widget footer-contact">
+									<h2 class="footer-title">Contact Us</h2>
+									<div class="footer-contact-info">
+										<div class="footer-address">
+											<span><i class="fas fa-map-marker-alt"></i></span>
+											<p> 3556  Beech Street, San Francisco,<br> California, CA 94108 </p>
+										</div>
+										<p>
+											<i class="fas fa-phone-alt"></i>
+											+1 315 369 5943
+										</p>
+										<p class="mb-0">
+											<i class="fas fa-envelope"></i>
+											doccure@example.com
+										</p>
+									</div>
+								</div>
+								<!-- /Footer Widget -->
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- /Footer Top -->
+				
+				<!-- Footer Bottom -->
+                <div class="footer-bottom">
+					<div class="container-fluid">
+					
+						<!-- Copyright -->
+						<div class="copyright">
+							<div class="row">
+								<div class="col-md-6 col-lg-6">
+									<div class="copyright-text">
+										<p class="mb-0"><a href="templateshub.net">Templates Hub</a></p>
+									</div>
+								</div>
+								<div class="col-md-6 col-lg-6">
+								
+									<!-- Copyright Menu -->
+									<div class="copyright-menu">
+										<ul class="policy-menu">
+											<li><a href="term-condition.html">Terms and Conditions</a></li>
+											<li><a href="privacy-policy.html">Policy</a></li>
+										</ul>
+									</div>
+									<!-- /Copyright Menu -->
+									
+								</div>
+							</div>
+						</div>
+						<!-- /Copyright -->
+						
+					</div>
+				</div>
+				<!-- /Footer Bottom -->
+				
+			</footer>
+			<!-- /Footer -->
+		   
+		</div>
+		<!-- /Main Wrapper -->
+	  
+		<!-- jQuery -->
+		<script src="assets/js/jquery.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Sticky Sidebar JS -->
+        <script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+		
+		<!-- Circle Progress JS -->
+		<script src="assets/js/circle-progress.min.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="assets/js/script.js"></script>
+		
+	</body>
+
+<!-- doccure/doctor-dashboard.html  30 Nov 2019 04:12:09 GMT -->
+</html>
